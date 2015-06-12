@@ -1,0 +1,96 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	margin:0;
+	padding:0;
+}
+.pesho {
+	color:red;
+}
+
+.pesho:hover {
+	color:blue 
+}
+.even_row {
+	background: red;
+}
+#mainmenu{
+
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: normal;
+	background-color: black;
+}
+body{
+	background-image: url("../img/background.jpg");
+
+
+}
+
+#navbar{
+	margin-left: 66px;
+
+}
+
+#navbar li a {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#navbar li a:hover {
+	color: red;
+}
+#logo{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+#games>a>img{
+
+	border: 2px solid white;
+}
+#slider{
+
+margin-top: 100px;
+	border: 1px solid black;
+
+}
+.bxslider li img{
+
+	/*height: 500px;*/
+}
+#news-wrapper{
+	width: 100%;
+}
+
+#news-container{
+	font-family: 'Verdana', sans-serif;
+	display: block;
+	border: 1px solid whitesmoke;
+	background-color: whitesmoke;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 65%;
+	padding: 5px;
+}
+#news-container h2{
+	font-family: 'Noto Sans', sans-serif;
+	margin: 15px;
+	color: darkred;
+	text-align: left;
+}
+
+.news{
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid black;
+	width: 280px;
+}
+.news p{
+
+	font-size: 12px;
+}
+#allnews{
+	font-family: 'Noto Sans', sans-serif;
+	margin-top: -2%;
+	margin-right: 20%;
+}
