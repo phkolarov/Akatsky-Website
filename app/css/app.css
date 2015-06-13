@@ -2,16 +2,6 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
 	margin:0;
 	padding:0;
 }
-.pesho {
-	color:red;
-}
-
-.pesho:hover {
-	color:blue 
-}
-.even_row {
-	background: red;
-}
 #mainmenu{
 
 	font-family: 'Noto Sans', sans-serif;
@@ -32,6 +22,7 @@ body{
 #navbar li a {
 	padding-left: 30px;
 	padding-right: 30px;
+	font-weight: bold;
 }
 
 #navbar li a:hover {
@@ -65,16 +56,16 @@ margin-top: 100px;
 	font-family: 'Verdana', sans-serif;
 	display: block;
 	border: 1px solid whitesmoke;
-	background-color: whitesmoke;
+	background-color: #29292a;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 65%;
+	max-width: 980px;
 	padding: 5px;
 }
-#news-container h2{
+#news-container h3, h4{
 	font-family: 'Noto Sans', sans-serif;
 	margin: 15px;
-	color: darkred;
+	color: whitesmoke;
 	text-align: left;
 }
 
@@ -83,14 +74,101 @@ margin-top: 100px;
 	margin: 10px;
 	padding: 10px;
 	border: 1px solid black;
-	width: 280px;
+	width: 90%;
 }
 .news p{
 
+	line-height: 15px;
 	font-size: 12px;
+	color: whitesmoke;
 }
 #allnews{
 	font-family: 'Noto Sans', sans-serif;
 	margin-top: -2%;
 	margin-right: 20%;
+}
+
+.spinner {
+	width: 30px;
+	height: 30px;
+	background-color: whitesmoke;
+
+	margin: 100px auto;
+	-webkit-animation: rotateplane 1.2s infinite ease-in-out;
+	animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+	0% { -webkit-transform: perspective(120px) }
+	50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+	100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+	0% {
+		transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+		-webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+	} 50% {
+		  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+		  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+	  } 100% {
+			transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+			-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+		}
+}
+
+#footer-container{
+
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 6em;
+	max-width: 980px;
+	height: 333px;
+	background-color: #363839;
+	border: 1px solid aliceblue;
+	border-top: 20px solid darkgrey;
+}
+.footer-section{
+
+	display: block;
+	padding: 10px;
+	border: 1px solid black;
+	margin: 5px;
+	width: 23.6%;
+	height: 300px;
+	float: left;
+	text-decoration: none;
+
+}
+.footer-section a{
+	width: 210px;
+
+}
+.footer-section p{
+
+
+	margin-top: 80px;
+	color: whitesmoke;
+	font-size: 13px;
+	line-height:170%;
+}
+.footer-section ul li {
+	margin: 15px;
+	font-size: 13px;
+	font-family: 'Noto Sans', sans-serif;
+	list-style-type: none;
+	border-bottom: 1px solid ;
+}
+.footer-section ul li a:hover{
+	color: red;
+}
+#footer-wrapper{
+	height: auto;
+}
+#ft-logo{
+
+	width: 160px;
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -1,71 +1,18 @@
 <div id="news-wrapper">
 
 <div id="news-container">
-<h2>Новини</h2>
+<h3>Последни Новини</h3>
 
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
+    <div ng-if="spiner" class="spinner"></div>
+    <div ng-repeat="newsData in news | orderBy:'-createdAt'" class="news">
 
+        <a ng-href="#/neWs/{{newsData.objectId}}">
+
+            <h4>{{newsData.title}}</h4>
+            <img ng-src="{{newsData.thumbnail}}">
+            <p>{{newsData.introNewsData}}</p>
+        </a>
     </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-    <div class="news">
-        <h3>Title News</h3>
-        <p>new image</p>
-        <p>Sed gravida bibendum diam non consequat. Duis quis posuere diam. Nullam finibus elementum luctus. Duis nec vulputate sapien, a elementum tellus. Pellentesque non enim mollis, mollis mi cursus, posuere arcu.</p>
-
-    </div>
-
-
 
 
 </div>
