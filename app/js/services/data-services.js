@@ -13,8 +13,19 @@ app.factory('siteData', ['$resource','$http', 'baseServiceURL','autentication', 
     }
 
 
-    return{
-        newsData: newsData
+
+    function videosData(){
+
+        var url = baseServiceURL+ 'classes/videos' ;
+        var resource = $resource(url);
+
+        return resource.get();
     }
 
-}])
+
+    return{
+        newsData: newsData,
+        videosData: videosData
+    }
+
+}]);

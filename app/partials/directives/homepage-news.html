@@ -3,15 +3,38 @@
 <div id="news-container">
 <h3>Последни Новини</h3>
 
-    <div ng-if="spiner" class="spinner"></div>
-    <div ng-repeat="newsData in news | orderBy:'-createdAt'" class="news">
+    <div id="newsBox" class="col-md-9" >
+        <div ng-if="spiner" class="spinner"></div>
+        <!--<input id="search" placeholder="SEARCH" type="text" ng-model="searchInput" ng-change="search()">-->
+        <div ng-repeat="newsData in news | orderBy:'-createdAt'" class="news" >
 
-        <a ng-href="#/neWs/{{newsData.objectId}}">
+            <a ng-href="#/neWs/{{newsData.objectId}}">
 
-            <h4>{{newsData.title}}</h4>
-            <img ng-src="{{newsData.thumbnail}}">
-            <p>{{newsData.introNewsData}}</p>
-        </a>
+                <h4>{{newsData.title}}</h4>
+                <img ng-src="{{newsData.thumbnail}}">
+                <p>{{newsData.introNewsData}}</p>
+            </a>
+        </div>
+    </div>
+
+    <div id="latestVideosMenu" class="col-md-3">
+
+        <h4>Ново Видео</h4>
+        <ul>
+            <li ng-repeat="video in latestVideos">
+            <a ng-href="#/video/{{video.objectId}}">
+
+                    <h5 id="thumbTitle">{{video.title}}</h5>
+                    <img ng-src="{{video.thumbail}}">
+                <p class="thumbdate">{{video.createdAt | date:'dd MMM yyyy HH:mm:ss'}}</p>
+
+
+            </a>
+
+            </li>
+
+        </ul>
+
     </div>
 
 
