@@ -4,5 +4,4 @@ app.directive('slider', function () {
         templateUrl: 'partials/directives/slider.html',
         controller: 'SliderController'
     }
-
 });

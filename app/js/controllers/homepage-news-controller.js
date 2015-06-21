@@ -2,6 +2,7 @@ app.controller('HomePageNewsController', ['$scope','siteData', '$timeout','baseT
 
 
         $scope.spiner=true;
+        $scope.ss = 'ядтяяд'
 
 
 

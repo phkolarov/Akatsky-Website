@@ -1,7 +1,9 @@
+
 <div id="news-wrapper">
 
 <div id="news-container">
-<h3>Последни Новини</h3>
+<h3>{{ses}}</h3>
+
 
     <div id="newsBox" class="col-md-9" >
         <div ng-if="spiner" class="spinner"></div>
@@ -17,27 +19,9 @@
         </div>
     </div>
 
-    <div id="latestVideosMenu" class="col-md-3">
-
-        <h4>Ново Видео</h4>
-        <ul>
-            <li ng-repeat="video in latestVideos">
-            <a ng-href="#/video/{{video.objectId}}">
-
-                    <h5 id="thumbTitle">{{video.title}}</h5>
-                    <img ng-src="{{video.thumbail}}">
-                <p class="thumbdate">{{video.createdAt | date:'dd MMM yyyy HH:mm:ss'}}</p>
 
 
-            </a>
-
-            </li>
-
-        </ul>
-
-    </div>
-
-
+<div latest></div>
 </div>
     <!--<button id="allnews" class="btn-danger pull-right">Всички новини</button>-->
 </div>

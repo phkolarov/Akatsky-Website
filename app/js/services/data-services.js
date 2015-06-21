@@ -22,10 +22,18 @@ app.factory('siteData', ['$resource','$http', 'baseServiceURL','autentication', 
         return resource.get();
     }
 
+    function getCurrentArticle(objectId){
+        var url = baseServiceURL + 'classes/news/' +objectId;
+        var resource = $resource(url);
+
+        return resource.get();
+    }
+
 
     return{
         newsData: newsData,
-        videosData: videosData
+        videosData: videosData,
+        getCurrentArticle:getCurrentArticle
     }
 
 }]);

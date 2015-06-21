@@ -1,6 +1,29 @@
-<h1>Article</h1>
 
-<h1>Article</h1><h1>Article</h1>
-<h1>Article</h1><h1>Article</h1>
+<div class="current" id="news-wrapper">
+
+    <div id="news-container">
+        <div ng-bind-html="fd"></div>
+        <h3>Последни новини {{some}} </h3>
+        <p>{{jsTrSimple}}</p>
 
 
+        <div id="newsBox" class="col-md-9" >
+
+            <!--<input id="search" placeholder="SEARCH" type="text" ng-model="searchInput" ng-change="search()">-->
+            <div class="news" >
+                <h4>{{article.title}}</h4>
+                <img ng-src="{{article.image}}">
+                <p>Имало едно време</p>
+                <p>{{article.text}}</p>
+                <div id="articleCreate">
+                    <span>By Akatsky Admin {{article.date | date:'dd MMM yyyy HH:mm:ss'}}</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div latest></div>
+    </div>
+
+</div>
